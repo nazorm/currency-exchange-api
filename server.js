@@ -50,6 +50,6 @@ app.use(function(err, req, res, next){
 //2. Remove whitespaces in currency query param
 
 
-app.listen(port, function() {
+app.listen(process.env.PORT || port, function() {
     console.log('Server is listening on port 8080')
 })
